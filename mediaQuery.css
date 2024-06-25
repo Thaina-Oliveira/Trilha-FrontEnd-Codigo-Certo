@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap");
+
+:root {
+  --primary-color: #000000;
+  --secondary-color: #ffffff;
+  --tertiary-color: #e53939;
+}
+/* media queries */
+@media (max-width: 520px) {
+  .panel.active {
+    flex-grow: 5;
+    transition: flex 0.8s ease-in;
+  }
+}
+@media (max-width: 600px) {
+  .panel.active {
+    flex-grow: 3;
+    transition: flex 0.8s ease-in;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    justify-content: center;
+  }
+  .container .main-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    column-gap: 2%;
+  }
+  .img-container {
+    align-self: center;
+  }
+  .about {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about .about-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-image {
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    align-self: flex-start;
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: -1;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .logo {
+    display: none;
+  }
+
+  .hamburger {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    margin-left: auto;
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger span {
+    height: 5px;
+    width: 100%;
+    background-color: var(--tertiary-color);
+    border-radius: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+  }
+  .navbar {
+    height: 0;
+    position: absolute;
+    width: 100vw;
+    top: 85px;
+    left: 0;
+    right: 0;
+    transition: 0.5s ease;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    overflow: hidden;
+  }
+
+  .navbar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    opacity: 0;
+  }
+  .navbar ul li {
+    margin-bottom: 12px;
+  }
+
+  .navbar.active {
+    height: 90vh;
+  }
+  .navbar.active ul {
+    opacity: 1;
+  }
+  .hamburger span:nth-child(1) {
+    top: 25%;
+  }
+  .hamburger span:nth-child(2) {
+    top: 50%;
+  }
+  .hamburger span:nth-child(3) {
+    top: 75%;
+  }
+
+  .hamburger.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+  }
+  footer div {
+    width: 20%;
+  }
+  .navbar ul li button {
+    display: none;
+  }
+}
+@media only screen and (min-width: 901px) {
+  header button.mode-indicator.deactive {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .navbar ul li a {
+    font-size: 1.1rem;
+  }
+  .details h1 {
+    font-size: 2.5rem;
+  }
+  h2.subtitle {
+    font-size: 2.2rem;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+  .img-container {
+    min-height: 250px;
+    min-width: 250px;
+  }
+  .img-container img {
+    min-width: 200px;
+    max-width: 250px;
+  }
+  .img-container::before {
+    background: var(--tertiary-color);
+    -webkit-filter: blur(100px);
+    filter: blur(100px) brightness(1.5);
+  }
+  .social-img {
+    height: 38px;
+    width: 38px;
+  }
+}
+@media (min-width: 1400px) {
+  .header {
+    padding: 20px 100px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+  .navbar a {
+    font-size: 1.1rem;
+  }
+  .details h1 {
+    font-size: 3.5rem;
+  }
+  h2.subtitle {
+    font-size: 2.8rem;
+  }
+  .details h3 {
+    font-size: 2rem;
+  }
+
+  .img-container {
+    min-height: 400px;
+    min-width: 400px;
+  }
+  .img-container img {
+    min-width: 300px;
+    max-width: 350px;
+  }
+  .about-image {
+    position: sticky;
+    position: -webkit-sticky;
+    z-index: -1;
+    top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-image img {
+    min-width: 300px;
+    max-width: 350px;
+  }
+  .social-img {
+    height: 40px;
+    width: 40px;
+  }
+}

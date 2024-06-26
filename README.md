@@ -14,8 +14,6 @@ Este projeto é um site de para o desafio para a Codigo certo, neste site será 
 - **🎨 Seção de Hobbies Interativa:** Painéis clicáveis que se expandem para mostrar mais informações sobre cada hobby.
 - **🔗 Barra de Navegação:** Uma barra de navegação com rolagem suave para diferentes seções da página.
 
-## 🛠️ Tecnologias Utilizadas
-
   ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)

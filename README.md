@@ -2,10 +2,6 @@
 ## Projeto para trilha Front-End do Codigo certo.
 Este projeto é um site de para o desafio para a Codigo certo, neste site será exibido minhas habilidades, hobbies e informações pessoais. O site foi projetado para fornecer uma breve introdução, compartilhar interesses pessoais e oferecer informações de contato através de links para redes sociais.
 
-
-
-## 🧾 Índice
-
 ## 🖥️ Visão Geral do Projeto
 - Uma seção inicial com uma mensagem de boas-vindas e uma foto de perfil.
 - Uma seção "Sobre Mim" detalhando informações pessoais e aspirações de carreira.
